@@ -1,4 +1,4 @@
-## ACT-Ontology
+## ACT-Ontologies
 The ontologies that are deployed on the ACT network.
 
 #### ACT websites
