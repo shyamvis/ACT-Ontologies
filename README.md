@@ -1,4 +1,5 @@
 ## ACT-Ontology
+The ontologies that are deployed on the ACT network.
 
 #### ACT websites
 * ACT Network national website https://www.actnetwork.us/national
