@@ -1,6 +1,6 @@
 ### Instructions for importing using SQL Developer and .dsv files
-1. Truncate TABLE_ACCESS *This only applies when testing
-2. Import TABLE_ACCESS ( table_access.csv ) 
+1. drop table TABLE_ACCESS; *This only applies when testing
+2. Import TABLE_ACCESS ( table_access_V4.sql ) you can either open the file and run all statements or @file/path/table_access_v4.sql to run the sql script.
 3. Create the tables:
 	- create table ACT_SDOH_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
 	- create table ACT_VITAL_SIGNS_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
