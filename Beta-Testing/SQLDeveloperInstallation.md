@@ -1,12 +1,13 @@
-Instructions for importing using SQL Developer and .dsv files
+### Instructions for importing using SQL Developer and .dsv files
 1. Truncate TABLE_ACCESS *This only applies when testing
 2. Import TABLE_ACCESS ( table_access.csv ) 
 3. Create the tables:
-	create table ACT_SDOH_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
-	create table ACT_VITAL_SIGNS_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
-	create table ACT_DEMOGRAPHICS_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
+	- create table ACT_SDOH_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
+	- create table ACT_VITAL_SIGNS_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
+	- create table ACT_DEMOGRAPHICS_V4 as select * from NCATS_DEMOGRAPHICS where 1=0;
+	
 
-Import the tables ( for now sdoh.dsv, vitalsigns.dsv and demographics.dsv)
+#### Import the tables ( for now sdoh.dsv, vitalsigns.dsv and demographics.dsv)
 4. Right click on the table.
 5. Select "Import"
 6. Select the appropriate pipe delimited file name (i.e. sdoh.dsv for the ACT_SDOH_V4 table)
