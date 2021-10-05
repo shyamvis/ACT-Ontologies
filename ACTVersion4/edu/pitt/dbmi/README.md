@@ -18,3 +18,4 @@ Import ACT crc files into your SQLServer i2b2 crcdata schem This will truncate c
   
 
  
+copies of the drivers are in the ACTVersion4 directory if you need them
