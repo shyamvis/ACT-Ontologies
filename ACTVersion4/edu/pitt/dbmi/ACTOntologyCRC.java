@@ -23,12 +23,14 @@ public class ACTOntologyCRC {
 	//String database = "i2b2metadata";
 	//String port = "1433";
 
+	String jdbcUrl = args[0];
+	/*
 	String username = args[0];
 	String password = args[1];
 	String serverName = args[2];
 	String database = args[3];
 	String port = args[4];
-
+	*/
 	//System.out.println("Args: " + args[0] + " " + args[2]);
 
 	String[] ontologyFileName = {"ACT_MED_ALPHA_V4_CD.tsv",
@@ -71,7 +73,7 @@ public class ACTOntologyCRC {
 	};
 
 
-        String connectionUrl =
+        /*String connectionUrl =
                 "jdbc:sqlserver://"+serverName+":"+port+";"
                 + "database="+database+";"
                 + "user="+username+";"
@@ -80,7 +82,9 @@ public class ACTOntologyCRC {
                 + "trustServerCertificate=true;"
                 + "loginTimeout=30;"
                 + "queryTimeout=0;";
-	
+		*/
+	String connectionUrl = jdbcUrl;
+	    
         ResultSet resultSet = null;
 	
         try (
