@@ -17,17 +17,19 @@ public class ACTImportOntologyTest {
     // Replace server name, username, and password with your credentials
     public static void main(String[] args) {
 	int batchSize = 200000;
-	//String password = "<YourStrong@Passw0rd>";
-	//String username = "SA";
-	//String serverName = "localhost";
-	//String database = "i2b2metadata";
+	//String password = "password";
+	//String username = "username";
+	//String serverName = "hostname";
+	//String database = "schema_or_db";
 	//String port = "1433";
-
-	String username = args[0];
+	
+	String jdbcUrl = args[0];
+	/*String username = args[0];
 	String password = args[1];
 	String serverName = args[2];
 	String database = args[3];
 	String port = args[4];
+	*/
 
 	//System.out.println("Args: " + args[0] + " " + args[2]);
 
@@ -136,8 +138,10 @@ public class ACTImportOntologyTest {
                 + "trustServerCertificate=true;"
                 + "loginTimeout=30;"
                 + "queryTimeout=0;";
-	
-        ResultSet resultSet = null;
+	    
+	connectionUrl = jdbcUrl;
+        
+	ResultSet resultSet = null;
 	
         try (
 	     Connection connection = DriverManager.getConnection(connectionUrl);
