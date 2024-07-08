@@ -4,6 +4,7 @@
   - side effect
   - hpo
   - ccs/ccsr
+  - phenotypes (griffin)
 - PCORI
 - Oncology
 - Medication Classification
